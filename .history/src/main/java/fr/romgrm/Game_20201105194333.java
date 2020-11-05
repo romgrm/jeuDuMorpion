@@ -4,7 +4,8 @@ import java.util.Scanner;
 
 public class Game {
     
-    Planche planche;  
+    Planche planche; 
+    Player currentSymbole; 
     Player joueur_1 = new Player("Joueur 1", 'X'); 
     Player joueur_2 = new Player("Joueur 2", 'O');
     Planche plancheDeJeu = new Planche();
@@ -34,8 +35,8 @@ public class Game {
         System.out.println("Maintenant, entre un nombre pour choisir la colonne : ");
         int entreeColumn = scan.nextInt();    
         
-        
-        this.plancheDeJeu.fill(this.joueur_1.symbolJoueur , entreeRow, entreeColumn);
+        this.currentSymbole = joueur_1.getSymbolJoueur(); 
+        this.plancheDeJeu.fill(currentSymbole , entreeRow, entreeColumn);
         this.plancheDeJeu.display();
             
     }

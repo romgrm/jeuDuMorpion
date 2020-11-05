@@ -3,12 +3,12 @@ package fr.romgrm;
 public class Planche {
     
     //private String nomDeLaPlanche;
-    char [][] grilleDeMorpion; 
+    Player [][] grilleDeMorpion; 
     //Player player;   
     
     /*CONSTRUCTOR*/
     public Planche() {
-        this.grilleDeMorpion = new char[3][3];
+        this.grilleDeMorpion = new Player[3][3];
         // for (int x = 0; x < grilleDeMorpion.length; x++) {
         //     for (int y = 0; y < grilleDeMorpion[x].length; y++) {
         //         grilleDeMorpion[x][y];
@@ -32,7 +32,7 @@ public class Planche {
         System.out.println();
     }
 
-    public char[][] getGrilleDeMorpion() {
+    public Player[][] getGrilleDeMorpion() {
         return grilleDeMorpion;
     }
 
@@ -40,8 +40,8 @@ public class Planche {
     //     this.grilleDeMorpion = grilleDeMorpion;
     // }
 
-    public void fill(char symbolJoueur, int entreeRow, int entreeColumn ){
-        this.grilleDeMorpion[entreeRow][entreeColumn] = symbolJoueur ; 
+    public void fill(Player symbolJoueur, int entreeRow, int entreeColumn ){
+        this.grilleDeMorpion[entreeRow][entreeColumn] = symbolJoueur; 
     }
     
 }

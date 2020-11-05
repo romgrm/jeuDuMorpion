@@ -35,7 +35,7 @@ public class Game {
         int entreeColumn = scan.nextInt();    
         
         
-        this.plancheDeJeu.fill(this.joueur_1.symbolJoueur , entreeRow, entreeColumn);
+        this.plancheDeJeu.fill(joueur_1.symbolJoueur , entreeRow, entreeColumn);
         this.plancheDeJeu.display();
             
     }

@@ -5,8 +5,8 @@ public class Player {
     public char symbolJoueur;
 
     public Player(String nomDuJoueur,char symbolJoueur) {
-        this.nomDuJoueur = nomDuJoueur;
-        this.symbolJoueur = symbolJoueur;
+        this.nomDuJoueur = "Joueur_1";
+        this.symbolJoueur = 'X';
     }
 
     public String getNomDuJoueur() {

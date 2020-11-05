@@ -4,7 +4,7 @@ public class Player {
     public String nomDuJoueur; 
     public char symbolJoueur;
 
-    public Player(String nomDuJoueur,char symbolJoueur) {
+    public Player(String nomDuJoueur, char symbolJoueur) {
         this.nomDuJoueur = nomDuJoueur;
         this.symbolJoueur = symbolJoueur;
     }
