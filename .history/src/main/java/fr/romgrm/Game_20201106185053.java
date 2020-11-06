@@ -13,21 +13,21 @@ public class Game {
     /****************************************************** CREATION DE LA PARTIE ***************************************************************/
     public void newGame(){
 
-        System.out.println("\n" + "\n" + "Chaud pour une partie de Morpion ?? ");
-
-        Scanner scan0 = new Scanner(System.in);
-        char start = scan0.next("[Oo|Nn]").charAt(0);
         
-        if(start == 'O' || start == 'o'){
-            System.out.println("\n"+ "\n" + "Voici la planche de jeu");
 
-            plancheDeJeu.display();
-             
-            System.out.println("\n"+ "\n" + this.joueur_1.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_1.getSymbolJoueur() + "\n" + "\n" + "Quant à toi " + this.joueur_2.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_2.getSymbolJoueur());
+        System.out.println("\n" + "\n" + "Commençons une partie de Morpion !");
+
+        // je veux afficher la planche de morpion
+        // je dois donc créer une class planche de jeu et l'afficher ici
+
+         
+
+        System.out.println("\n"+ "\n" + "Voici la planche de jeu");
+
+        plancheDeJeu.display();
+
+        System.out.println("\n"+ "\n" + this.joueur_1.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_1.getSymbolJoueur() + "\n" + "\n" + "Quant à toi " + this.joueur_2.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_2.getSymbolJoueur());
         
-        }else{
-            System.out.println("\n" + "Dommage, une prochaine fois !");
-        }    
     }
     /**************************************************************************************************************************************************/
 
@@ -87,7 +87,7 @@ public class Game {
         char replay = scan3.next().charAt(0);
 
         if(replay == 'O' || replay == 'o'){
-           this.play();
+            this.play();
         }else{
             return; 
         }

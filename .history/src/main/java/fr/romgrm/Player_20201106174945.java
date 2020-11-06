@@ -46,10 +46,6 @@ public class Player {
             return true; 
         }else if(grilleDeMorpion[0][2] == 'X' && grilleDeMorpion[1][2] == 'X' && grilleDeMorpion[2][2] == 'X' || grilleDeMorpion[0][2] == 'O' && grilleDeMorpion[1][2] == 'O' && grilleDeMorpion[2][2] == 'O'){
             return true; 
-        }else if(grilleDeMorpion[0][0] == 'X' && grilleDeMorpion[1][1] == 'X' && grilleDeMorpion[2][2] == 'X' || grilleDeMorpion[0][0] == 'O' && grilleDeMorpion[1][1] == 'O' && grilleDeMorpion[2][2] == 'O'){
-            return true;
-        }else if(grilleDeMorpion[0][2] == 'X' && grilleDeMorpion[1][1] == 'X' && grilleDeMorpion[2][0] == 'X' || grilleDeMorpion[0][2] == 'O' && grilleDeMorpion[1][1] == 'O' && grilleDeMorpion[2][0] == 'O'){
-            return true;
         }else{
             return false; 
         }

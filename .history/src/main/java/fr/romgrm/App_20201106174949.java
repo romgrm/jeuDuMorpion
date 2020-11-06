@@ -15,7 +15,5 @@ public final class App {
         Game nouvellePartie = new Game();
         nouvellePartie.newGame();
         nouvellePartie.play();
-        nouvellePartie.replay();
-        
     }
 }

@@ -13,6 +13,8 @@ public class Game {
     /****************************************************** CREATION DE LA PARTIE ***************************************************************/
     public void newGame(){
 
+        
+
         System.out.println("\n" + "\n" + "Chaud pour une partie de Morpion ?? ");
 
         Scanner scan0 = new Scanner(System.in);
@@ -22,12 +24,26 @@ public class Game {
             System.out.println("\n"+ "\n" + "Voici la planche de jeu");
 
             plancheDeJeu.display();
-             
-            System.out.println("\n"+ "\n" + this.joueur_1.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_1.getSymbolJoueur() + "\n" + "\n" + "Quant à toi " + this.joueur_2.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_2.getSymbolJoueur());
+
+            System.out.println("\n" + "Appuie sur ENTRER pour continuer : ");
+            String enter = scan0.nextLine(); 
+            if(enter == " "){
+                System.out.println("\n"+ "\n" + this.joueur_1.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_1.getSymbolJoueur() + "\n" + "\n" + "Quant à toi " + this.joueur_2.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_2.getSymbolJoueur());
+            }else{
+                System.out.println("appuer sur entrer pour continuer");
+            }
+            // System.out.println("\n"+ "\n" + this.joueur_1.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_1.getSymbolJoueur() + "\n" + "\n" + "Quant à toi " + this.joueur_2.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_2.getSymbolJoueur());
         
         }else{
             System.out.println("\n" + "Dommage, une prochaine fois !");
-        }    
+        }
+
+        // System.out.println("\n"+ "\n" + "Voici la planche de jeu");
+
+        // plancheDeJeu.display();
+
+        // System.out.println("\n"+ "\n" + this.joueur_1.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_1.getSymbolJoueur() + "\n" + "\n" + "Quant à toi " + this.joueur_2.getNomDuJoueur() + " tu auras le symbole : " + this.joueur_2.getSymbolJoueur());
+        
     }
     /**************************************************************************************************************************************************/
 

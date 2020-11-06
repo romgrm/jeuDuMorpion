@@ -7,7 +7,7 @@ public class Planche {
     Player player;  
     
     
-    /*************** CONSTRUCTOR ***************/
+    /*CONSTRUCTOR*/
     public Planche() {
         this.grilleDeMorpion = new char[3][3];
         // for (int x = 0; x < grilleDeMorpion.length; x++) {
@@ -38,7 +38,7 @@ public class Planche {
     /*************************************************/
 
 
-    /**************** GETTERS & SETTERS *****************/
+    /********GETTERS & SETTERS********/
     public char[][] getGrilleDeMorpion() {
         return grilleDeMorpion;
     }
@@ -46,17 +46,17 @@ public class Planche {
      public void setGrilleDeMorpion(char[][] grilleDeMorpion) {
         this.grilleDeMorpion = grilleDeMorpion;
     }
-    /***********************************************************/
+    /*************************************************/
 
 
-    /******************* REMPLISSAGE DE LA GRILLE *****************/
+    /*****************REMPLISSAGE DE LA GRILLE*****************/
     public void fill(char symbolJoueur, int entreeRow, int entreeColumn ){
         this.grilleDeMorpion[entreeRow][entreeColumn] = symbolJoueur ; 
     }
 
     /* je remplie mon tableau qui attend du Char, en injectant le paramètre
     char symbolJoueur, aux coordonées taper dans le scan (entreeRow/entreeColumn)*/
-    /************************************************************************/
+    /*************************************************/
     
     
     
