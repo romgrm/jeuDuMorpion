@@ -13,7 +13,7 @@ public class Game {
     /****************************************************** CREATION DE LA PARTIE ***************************************************************/
     public void newGame(){
 
-        System.out.println("\n" + "\n" + "Chaud pour une partie de Morpion ?? Oui = O / Non = N ");
+        System.out.println("\n" + "\n" + "Chaud pour une partie de Morpion ?? ");
 
         Scanner scan0 = new Scanner(System.in);
         char start = scan0.next("[Oo|Nn]").charAt(0);
@@ -81,19 +81,17 @@ public class Game {
 
         
     }  
+    public void replay(){
+    System.out.println("Voulez-vous rejouer ? Oui = O / Non = N");
+        Scanner scan3 = new Scanner(System.in);
+        char replay = scan3.next().charAt(0);
 
-    /*************************************** RELANCEMENT DE LA PARTIE (fonctionne pas) ************************************************/
-    // public void replay(){
-    // System.out.println("Voulez-vous rejouer ? Oui = O / Non = N");
-    //     Scanner scan3 = new Scanner(System.in);
-    //     char replay = scan3.next().charAt(0);
-
-    //     if(replay == 'O' || replay == 'o'){
-    //        this.play();
-    //     }else{
-    //         return; 
-    //     }
-    // }
+        if(replay == 'O' || replay == 'o'){
+           this.play();
+        }else{
+            return; 
+        }
+    }
     /*****************************************************************************************************************/
 
     

@@ -13,7 +13,7 @@ public class Game {
     /****************************************************** CREATION DE LA PARTIE ***************************************************************/
     public void newGame(){
 
-        System.out.println("\n" + "\n" + "Chaud pour une partie de Morpion ?? Oui = O / Non = N ");
+        System.out.println("\n" + "\n" + "Chaud pour une partie de Morpion ?? ");
 
         Scanner scan0 = new Scanner(System.in);
         char start = scan0.next("[Oo|Nn]").charAt(0);
